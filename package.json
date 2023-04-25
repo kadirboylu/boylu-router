@@ -1,0 +1,12 @@
+{
+  "name": "@boylu/monorepo",
+  "version": "1.0.0",
+  "author": "Kadir Boylu",
+  "license": "MIT",
+  "scripts": {
+    "playground": "pnpm --filter @boylu/playground",
+    "router": "pnpm --filter @boylu/router",
+    "build": "pnpm router build && pnpm playground build",
+    "play": "pnpm playground dev"
+  }
+}
