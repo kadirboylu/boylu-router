@@ -1,0 +1,1 @@
+- I'm not currently accepting any pull requests, but I'm open to suggestions and ideas. Once I'm done with the core functionality, I'll start accepting pull requests.
