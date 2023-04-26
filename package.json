@@ -7,7 +7,9 @@
     "playground": "pnpm --filter @boylu/playground",
     "router": "pnpm --filter @boylu/router",
     "build": "pnpm router build && pnpm playground build",
-    "play": "pnpm playground dev"
+    "play": "pnpm playground dev",
+    "lint": "pnpm router lint",
+    "lint:fix": "pnpm router lint:fix"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",

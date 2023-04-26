@@ -1,9 +1,15 @@
-import type { Route } from "../types";
 import { Router } from "./router";
+import type { Route } from "../types";
 
 export const createRouter = (routes: Route[]) => {
-  const router = new Router(routes);
-  router.render();
+    const router = new Router(routes);
 
-  return router;
+    router
+        .render()
+        .then(() => {
+            return router;
+        })
+        .catch((err) => {
+            console.error(err);
+        });
 };
