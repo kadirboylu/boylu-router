@@ -10,6 +10,8 @@ const clickAnchor = async (href: string) => {
     if (!anchor) return;
 
     anchor.click();
+
+    await new Promise((resolve) => setTimeout(resolve, 0));
 };
 
 describe("Router", () => {
