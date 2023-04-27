@@ -9,7 +9,9 @@
     "build": "pnpm router build && pnpm playground build",
     "play": "pnpm playground dev",
     "lint": "pnpm router lint",
-    "lint:fix": "pnpm router lint:fix"
+    "lint:fix": "pnpm router lint:fix",
+    "test": "pnpm router test",
+    "test:watch": "pnpm router test:watch"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
