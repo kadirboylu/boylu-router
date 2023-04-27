@@ -13,6 +13,11 @@ export default defineConfig({
             fileName: "index",
         },
     },
+    resolve: {
+        alias: {
+            "@": resolvePath("src"),
+        },
+    },
     plugins: [
         typescript({
             rootDir: resolvePath("src"),
