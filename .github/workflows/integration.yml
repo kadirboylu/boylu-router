@@ -10,23 +10,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-  strategy:
-    matrix:
-      node-version: [19.x]
-      pnpm-version: [8.x]
+    strategy:
+      matrix:
+        node-version: [19.x]
+        pnpm-version: [8.x]
 
-  steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: "pnpm"
-    - name: Install pnpm
-      run: npm install -g pnpm@${{ matrix.pnpm-version }}
-    - name: Install dependencies
-      run: pnpm install
-    - name: Build
-      run: pnpm run build
-    - name: Lint
-      run: pnpm run lint
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+      - name: Install pnpm
+        run: npm install -g pnpm@${{ matrix.pnpm-version }}
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build
+        run: pnpm run build
+      - name: Lint
+        run: pnpm run lint
