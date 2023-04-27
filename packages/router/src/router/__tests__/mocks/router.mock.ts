@@ -29,7 +29,7 @@ const routes: Route[] = [
               <h1>Users</h1>
               <ul>
                   ${users
-                      .map((user: any) => {
+                      .map((user: User) => {
                           return `<li><a href="/users/${user.id}" class="router-link">${user.name}</a></li>`;
                       })
                       .join("")}
