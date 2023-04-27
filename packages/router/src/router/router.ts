@@ -1,4 +1,4 @@
-import type { Params, Route } from "../types";
+import type { Params, Route } from "@/types";
 
 export class Router {
     routes: Route[];
