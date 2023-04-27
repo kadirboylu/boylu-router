@@ -11,7 +11,7 @@
     "lint": "pnpm router lint",
     "lint:fix": "pnpm router lint:fix",
     "test": "pnpm router test",
-    "test:watch": "pnpm router test:watch"
+    "test-watch": "pnpm router test-watch"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
