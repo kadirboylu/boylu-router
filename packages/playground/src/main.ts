@@ -1,4 +1,4 @@
-import { Router } from "@boylu/router";
+import { createRouter } from "@boylu/router";
 import "./style.css";
 import { routes } from "./routes";
 
@@ -11,6 +11,4 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div id="router-view"></div>
 `;
 
-const router = new Router(routes);
-
-router.render();
+createRouter(routes);
