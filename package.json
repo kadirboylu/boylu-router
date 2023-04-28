@@ -6,7 +6,8 @@
   "scripts": {
     "playground": "pnpm --filter @boylu/playground",
     "router": "pnpm --filter @boylu/router",
-    "build": "pnpm router build && pnpm playground build",
+    "documentation": "pnpm --filter @boylu/docs",
+    "build": "pnpm router build && pnpm playground build && pnpm documentation docs:build",
     "play": "pnpm playground dev",
     "lint": "pnpm router lint",
     "lint:fix": "pnpm router lint:fix",
