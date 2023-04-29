@@ -14,6 +14,14 @@
             "require": "./dist/index.umd.cjs"
         }
     },
+    "homepage": "https://boylu-router-docs.vercel.app/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kadirboylu/boylu-router"
+    },
+    "bugs": {
+        "url": "https://github.com/kadirboylu/boylu-router/issues"
+    },
     "type": "module",
     "files": [
         "/dist"
@@ -24,7 +32,9 @@
         "lint:fix": "eslint . --ext .ts --fix",
         "format": "prettier --write .",
         "test": "vitest run",
-        "test-watch": "vitest"
+        "test-watch": "vitest",
+        "pre-publish": "pnpm run test && pnpm run build && pnpm run lint",
+        "npm-publish": "pnpm publish --access public"
     },
     "devDependencies": {
         "@rollup/plugin-typescript": "^11.1.0",
