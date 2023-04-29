@@ -1,6 +1,5 @@
 {
     "name": "@boylu/router",
-    "private": true,
     "version": "1.0.0",
     "author": "Kadir Boylu",
     "description": "A simple router for vanilla js",
