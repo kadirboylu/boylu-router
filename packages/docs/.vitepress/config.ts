@@ -2,10 +2,19 @@ import { defineConfig } from "vitepress";
 
 const commonNav = [
   {
-    text: "Introduction",
+    text: "Guide",
     items: [
-      { text: "Getting Started", link: "/getting-started" },
-      { text: "Key Concepts", link: "/key-concepts" },
+      { text: "Introduction", link: "/guide/introduction" },
+      { text: "Key Concepts", link: "/guide/key-concepts" },
+    ],
+  },
+  {
+    text: "Essentials",
+    items: [
+      { text: "Getting Started", link: "/essentials/getting-started" },
+      { text: "Route Parameters", link: "/essentials/route-parameters" },
+      { text: "Nested Routes", link: "/essentials/nested-routes" },
+      { text: "404 Page", link: "/essentials/404-page" },
     ],
   },
   {
