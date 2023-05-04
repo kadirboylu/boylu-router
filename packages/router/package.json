@@ -2,7 +2,7 @@
     "name": "@boylu/router",
     "version": "1.0.0",
     "author": "Kadir Boylu",
-    "description": "A simple router for vanilla js",
+    "description": "Boylu Router is a simple SPA router for JavaScript",
     "license": "MIT",
     "main": "./dist/index.umd.cjs",
     "module": "./dist/index.js",
@@ -24,6 +24,13 @@
     "type": "module",
     "files": [
         "/dist"
+    ],
+    "keywords": [
+        "router",
+        "spa",
+        "single page application",
+        "boylu",
+        "boylu router"
     ],
     "scripts": {
         "build": "tsc && vite build",
