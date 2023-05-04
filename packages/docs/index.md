@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Getting Started
-      link: /getting-started
+      link: /essentials/getting-started
     - theme: alt
       text: View on GitHub
       link: https://github.com/kadirboylu/boylu-router
