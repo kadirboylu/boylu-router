@@ -7,7 +7,7 @@ This is the main package of @boylu/router. Browser playground on [StackBlitz](ht
 
 ## Installation
 
-- Add `@boylu/router` to your existing project:
+-   Add `@boylu/router` to your existing project:
 
 ```bash
   npm i @boylu/router
@@ -37,7 +37,7 @@ This is the main package of @boylu/router. Browser playground on [StackBlitz](ht
   pnpm create vite router-test --template vanilla
 ```
 
-### Creating a Routes
+### Creating Routes
 
 ```js
 // routes.js
