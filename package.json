@@ -1,6 +1,6 @@
 {
   "name": "@boylu/monorepo",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "author": "Kadir Boylu",
   "license": "MIT",
   "scripts": {
