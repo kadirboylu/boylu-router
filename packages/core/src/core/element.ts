@@ -35,9 +35,6 @@ export const createElement = (tagName: string) => {
     ): Component => {
         const { children, on } = strings.reduce(createReducer(args), initial);
 
-        // eslint-disable-next-line no-console
-        console.log({ children, on });
-
         return {
             type: "element",
             template: h(tagName, { on }, children),
