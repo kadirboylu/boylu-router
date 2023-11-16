@@ -1,4 +1,4 @@
-import { div } from "@boylu/core";
+import { div, onClick } from "@boylu/core";
 
 type UserProps = {
   firstName: string;
@@ -6,4 +6,7 @@ type UserProps = {
 };
 
 export const User = ({ firstName, lastName }: UserProps) =>
-  div`Hello ${firstName} ${lastName}!!`;
+  div`
+    ${onClick(() => alert(firstName))}
+    Hello ${firstName} ${lastName}
+  `;
