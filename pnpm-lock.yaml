@@ -68,6 +68,9 @@ importers:
 
   packages/playground:
     devDependencies:
+      '@boylu/core':
+        specifier: workspace:*
+        version: link:../core
       '@boylu/router':
         specifier: workspace:*
         version: link:../router
