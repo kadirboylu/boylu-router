@@ -1,4 +1,6 @@
+import type { VNode } from "snabbdom";
+
 export interface Component {
     type: string;
-    template: string;
+    template: VNode;
 }
