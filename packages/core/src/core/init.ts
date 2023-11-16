@@ -1,7 +1,6 @@
-export const init = (
-    selector: string,
-    component: { type: string; template: string }
-) => {
+import { Component } from "@/types";
+
+export const init = (selector: string, component: Component) => {
     const app = document.querySelector(selector);
 
     if (!app) throw new Error("App not found");

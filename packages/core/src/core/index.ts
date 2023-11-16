@@ -1,2 +1,2 @@
-export { createElement } from "./element";
+export { createElement, div, p } from "./element";
 export { init } from "./init";
