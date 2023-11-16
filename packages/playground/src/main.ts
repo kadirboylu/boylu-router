@@ -1,5 +1,9 @@
-import { createRouter } from "@boylu/router";
 import "./style.css";
+import { init } from "@boylu/core";
+import { User } from "./components";
+
+/*
+import { createRouter } from "@boylu/router";
 import { routes } from "./routes";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
@@ -12,3 +16,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 `;
 
 createRouter(routes);
+*/
+
+const firstName = "Kadir";
+const lastName = "Boylu";
+
+init("#app", User({ firstName, lastName }));
